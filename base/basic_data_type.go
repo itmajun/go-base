@@ -1,4 +1,4 @@
-package basictype
+package base
 
 //1. boolean
 var a1 bool = true
@@ -36,8 +36,8 @@ var c string = "youyou"
 var d []int
 
 //5. 切片类型
-make([]int, 50, 100)
-new([100]int)[0:50]
+//make([]int, 50, 100)
+//new([100]int)[0:50]
 
 //6. struct 结构体
 type Student struct {
@@ -58,7 +58,7 @@ func test() *Student{
 //9. 接口类型
 
 type Reader interface {
-	Read(p []byte) (n int, err os.Error)
+	Read(p []byte) (n int)
 }
 
 //10. Map
